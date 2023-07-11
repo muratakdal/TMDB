@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="ButtonsTableViewCell" customModule="TMDB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8O-wt-hYq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                        <color key="backgroundColor" red="0.56470588239999997" green="0.80784313730000001" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="o8c-Pc-kXv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="16"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Log In">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpL-qf-iXp">
+                        <rect key="frame" x="0.0" y="55" width="320" height="45"/>
+                        <color key="backgroundColor" red="0.0039215686269999999" green="0.70588235290000001" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="kSy-ZG-8au"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="16"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Sign Up">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="A8O-wt-hYq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Cxg-u8-wFM"/>
+                    <constraint firstItem="SpL-qf-iXp" firstAttribute="trailing" secondItem="A8O-wt-hYq" secondAttribute="trailing" id="EYw-jb-ivN"/>
+                    <constraint firstItem="SpL-qf-iXp" firstAttribute="leading" secondItem="A8O-wt-hYq" secondAttribute="leading" id="HVa-xY-11I"/>
+                    <constraint firstAttribute="trailing" secondItem="A8O-wt-hYq" secondAttribute="trailing" id="YvL-I2-o7j"/>
+                    <constraint firstItem="A8O-wt-hYq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZQW-xf-lTm"/>
+                    <constraint firstAttribute="bottom" secondItem="SpL-qf-iXp" secondAttribute="bottom" id="dWB-kC-Zb0"/>
+                    <constraint firstItem="SpL-qf-iXp" firstAttribute="top" secondItem="A8O-wt-hYq" secondAttribute="bottom" constant="10" id="zK8-V1-QTg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="signInButton" destination="A8O-wt-hYq" id="we0-6o-hVp"/>
+                <outlet property="signUpButton" destination="SpL-qf-iXp" id="ZVY-dF-zl2"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="39.436619718309863"/>
+        </tableViewCell>
+    </objects>
+</document>
