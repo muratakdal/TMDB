@@ -18,36 +18,45 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Key:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec3-9z-I3U">
-                        <rect key="frame" x="8" y="8" width="33.333333333333336" height="28"/>
-                        <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="17"/>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Key:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec3-9z-I3U">
+                        <rect key="frame" x="8" y="4" width="41" height="36"/>
+                        <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="21"/>
                         <color key="textColor" name="tmdbGreen"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phe-9T-PdS">
-                        <rect key="frame" x="49.333333333333343" y="8" width="262.66666666666663" height="28"/>
-                        <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="17"/>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phe-9T-PdS">
+                        <rect key="frame" x="57" y="4" width="263" height="36"/>
+                        <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="21"/>
                         <color key="textColor" name="tmdbDarkBlue"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uFU-JN-HNh" userLabel="Value Text Field">
+                        <rect key="frame" x="57" y="5" width="247" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Ec3-9z-I3U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="8To-zx-5xQ"/>
-                    <constraint firstItem="Ec3-9z-I3U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="GeK-Cv-MTm"/>
+                    <constraint firstItem="Ec3-9z-I3U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="GeK-Cv-MTm"/>
+                    <constraint firstItem="uFU-JN-HNh" firstAttribute="centerY" secondItem="Phe-9T-PdS" secondAttribute="centerY" id="HCL-Xn-1sa"/>
                     <constraint firstItem="Ec3-9z-I3U" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KaU-0z-0cj"/>
-                    <constraint firstAttribute="bottom" secondItem="Phe-9T-PdS" secondAttribute="bottom" constant="8" id="Uyu-uS-ykD"/>
-                    <constraint firstItem="Phe-9T-PdS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="VUG-jK-l5L"/>
+                    <constraint firstItem="uFU-JN-HNh" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="SLg-aX-zQb"/>
+                    <constraint firstAttribute="bottom" secondItem="Phe-9T-PdS" secondAttribute="bottom" constant="4" id="Uyu-uS-ykD"/>
+                    <constraint firstItem="Phe-9T-PdS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="VUG-jK-l5L"/>
                     <constraint firstItem="Phe-9T-PdS" firstAttribute="leading" secondItem="Ec3-9z-I3U" secondAttribute="trailing" constant="8" id="bTC-kH-lGt"/>
-                    <constraint firstAttribute="trailing" secondItem="Phe-9T-PdS" secondAttribute="trailing" constant="8" id="psZ-ag-z26"/>
-                    <constraint firstAttribute="bottom" secondItem="Ec3-9z-I3U" secondAttribute="bottom" constant="8" id="umZ-VU-8Uh"/>
+                    <constraint firstAttribute="trailing" secondItem="Phe-9T-PdS" secondAttribute="trailing" id="psZ-ag-z26"/>
+                    <constraint firstAttribute="bottom" secondItem="Ec3-9z-I3U" secondAttribute="bottom" constant="4" id="umZ-VU-8Uh"/>
+                    <constraint firstItem="uFU-JN-HNh" firstAttribute="leading" secondItem="Phe-9T-PdS" secondAttribute="leading" id="xsX-gp-bpw"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="keyLabel" destination="Ec3-9z-I3U" id="cOH-v3-JIa"/>
                 <outlet property="valueLabel" destination="Phe-9T-PdS" id="qbC-L3-cik"/>
+                <outlet property="valueTF" destination="uFU-JN-HNh" id="wvO-Ic-n4B"/>
             </connections>
-            <point key="canvasLocation" x="96" y="20"/>
+            <point key="canvasLocation" x="94.656488549618317" y="19.718309859154932"/>
         </tableViewCell>
     </objects>
     <resources>

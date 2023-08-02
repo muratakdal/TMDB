@@ -9,7 +9,7 @@ import UIKit
 
 class TabbarViewController: UITabBarController {
     
-    var profile  :ProfileViewController? = nil
+    var profile : ProfileViewController? = nil
     var main : MainPageViewController? = nil
 
     override func viewDidLoad() {

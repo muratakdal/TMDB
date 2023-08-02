@@ -31,12 +31,7 @@ class FilmDetailsViewController: UIViewController{
         addCommentButton.tintColor = UIColor(named: "tmdbGreen")
         navigationItem.rightBarButtonItem = addCommentButton
     }
-    
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        readComments()
-//    }
-    
+   
     func registerTableViewCells(){
         self.detailTableView.register(UINib(nibName: "FilmBackgroundTableViewCell", bundle: nil), forCellReuseIdentifier: "FilmBackgroundTableViewCell")
         self.detailTableView.register(UINib(nibName: "FilmOverviewTableViewCell", bundle: nil), forCellReuseIdentifier: "FilmOverviewTableViewCell")

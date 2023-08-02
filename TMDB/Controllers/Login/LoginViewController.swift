@@ -18,6 +18,7 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func getEmailText(text: String) {
         emailText = text
     }
+    
     func getPasswordText(text: String) {
         passwordText = text
     }
@@ -27,29 +28,18 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      
-        
-        //Looks for single or multiple taps.
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        
-        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
-        //tap.cancelsTouchesInView = false
-        
+       
         view.addGestureRecognizer(tap)
                 
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
         self.registerTableViewCells()
-        
-        
-      
-
+    
     }
     
     @objc func reloadTable() {
-        // Logout işlemleri
-        
          emailText =  ""
          passwordText = ""
         tableView.reloadData()
@@ -58,7 +48,6 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
     }
     
     @objc func dismissKeyboard() {
@@ -106,16 +95,16 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return UITableViewCell()
     }
     
-    
-    
     @objc func signInButtonAction(_ sender: UIButton) {
-        // Disable the button
         sender.isEnabled = false
+        
         let activityIndicator = UIActivityIndicatorView(style: .medium)
         activityIndicator.center = sender.center
         sender.superview?.addSubview(activityIndicator)
         activityIndicator.startAnimating()
+        
         dismissKeyboard()
+        
         if emailText != "" && passwordText != "" {
             Auth.auth().signIn(withEmail: emailText , password: passwordText ) { authdata, error in
                 if error != nil {
@@ -126,9 +115,7 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     tabbarVC.modalPresentationStyle = .fullScreen
                     self.show(tabbarVC, sender: nil)
                 }
-                // Enable the button
                 sender.isEnabled = true
-                // Remove the activity indicator
                 activityIndicator.stopAnimating()
             }
         } else {
@@ -141,11 +128,14 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @objc func signUpButtonAction(_ sender: UIButton) {
         sender.isEnabled = false
+        
         let activityIndicator = UIActivityIndicatorView(style: .medium)
         activityIndicator.center = sender.center
         sender.superview?.addSubview(activityIndicator)
         activityIndicator.startAnimating()
+        
         dismissKeyboard()
+        
         if emailText != "" && passwordText != "" {
             Auth.auth().createUser(withEmail: emailText, password: passwordText) { authdata, error in
                 if error != nil {
@@ -224,19 +214,4 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
         alert.addAction(okButton)
         self.present(alert, animated: true)
     }
-    
-    
-    
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }

@@ -7,22 +7,33 @@
 
 import UIKit
 
-class KeyValueTableViewCell: UITableViewCell {
+protocol KeyValueTableViewCellDelegate {
+    func getValueText(text: String)
+}
+
+class KeyValueTableViewCell: UITableViewCell, UITextFieldDelegate {
+    var delegate: KeyValueTableViewCellDelegate?
 
     @IBOutlet weak var keyLabel: UILabel!
     
     @IBOutlet weak var valueLabel: UILabel!
     
+    @IBOutlet weak var valueTF: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        delegate?.getValueText(text: textField.text ?? "Error")
+    }
+    
+    func bind(){
+        valueTF.delegate = self
     }
     
 }

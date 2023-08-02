@@ -22,6 +22,8 @@
 		000BBA9329D5B781000B75A5 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 000BBA9229D5B781000B75A5 /* FirebaseFirestoreSwift */; };
 		000BBA9529D5B781000B75A5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 000BBA9429D5B781000B75A5 /* FirebaseStorage */; };
 		000BBA9729D5CD06000B75A5 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000BBA9629D5CD06000B75A5 /* MainPageViewController.swift */; };
+		00151B7C2A666AAF009C9CB2 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00151B7A2A666AAF009C9CB2 /* ButtonTableViewCell.swift */; };
+		00151B7D2A666AAF009C9CB2 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00151B7B2A666AAF009C9CB2 /* ButtonTableViewCell.xib */; };
 		00435E9D29F9445400C0216A /* ButtonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00435E9B29F9445400C0216A /* ButtonsTableViewCell.swift */; };
 		00435E9E29F9445400C0216A /* ButtonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00435E9C29F9445400C0216A /* ButtonsTableViewCell.xib */; };
 		00435EA129F9456600C0216A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 00435EA029F9456600C0216A /* Kingfisher */; };
@@ -32,11 +34,15 @@
 		007B27802A1CDB9B009C763E /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007B277F2A1CDB9B009C763E /* CommentModel.swift */; };
 		0086B2952A0A70AD008AC1A4 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086B2932A0A70AD008AC1A4 /* CommentTableViewCell.swift */; };
 		0086B2962A0A70AD008AC1A4 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0086B2942A0A70AD008AC1A4 /* CommentTableViewCell.xib */; };
+		0088AFD12A5D923A0024F382 /* ProfilePhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0088AFCF2A5D923A0024F382 /* ProfilePhotoTableViewCell.swift */; };
+		0088AFD22A5D923A0024F382 /* ProfilePhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0088AFD02A5D923A0024F382 /* ProfilePhotoTableViewCell.xib */; };
 		009AC4D329F8F91A00AFB70A /* FilmDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009AC4D229F8F91A00AFB70A /* FilmDetailsViewController.swift */; };
 		009AC4D729F8FC0500AFB70A /* FilmBackgroundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009AC4D529F8FC0500AFB70A /* FilmBackgroundTableViewCell.swift */; };
 		009AC4D829F8FC0500AFB70A /* FilmBackgroundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009AC4D629F8FC0500AFB70A /* FilmBackgroundTableViewCell.xib */; };
 		009AC4DB29F8FD1300AFB70A /* FilmOverviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009AC4D929F8FD1300AFB70A /* FilmOverviewTableViewCell.swift */; };
 		009AC4DC29F8FD1300AFB70A /* FilmOverviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009AC4DA29F8FD1300AFB70A /* FilmOverviewTableViewCell.xib */; };
+		009CDCA62A6122B700718E60 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 009CDCA52A6122B700718E60 /* Alamofire */; };
+		009CDCA92A61237C00718E60 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 009CDCA82A61237C00718E60 /* AlamofireImage */; };
 		009F52772A0E123D000B2200 /* SingleButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009F52752A0E123D000B2200 /* SingleButtonTableViewCell.swift */; };
 		009F52782A0E123D000B2200 /* SingleButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009F52762A0E123D000B2200 /* SingleButtonTableViewCell.xib */; };
 		00B35CFA2A0E2DEE00F29F2B /* KeyValueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B35CF82A0E2DEE00F29F2B /* KeyValueTableViewCell.swift */; };
@@ -69,6 +75,8 @@
 		000BBA7D29D5B153000B75A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000BBA8329D5B2CB000B75A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		000BBA9629D5CD06000B75A5 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		00151B7A2A666AAF009C9CB2 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		00151B7B2A666AAF009C9CB2 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
 		00435E9B29F9445400C0216A /* ButtonsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsTableViewCell.swift; sourceTree = "<group>"; };
 		00435E9C29F9445400C0216A /* ButtonsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonsTableViewCell.xib; sourceTree = "<group>"; };
 		004D3C002A26153E00231EDB /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -78,6 +86,8 @@
 		007B277F2A1CDB9B009C763E /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		0086B2932A0A70AD008AC1A4 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		0086B2942A0A70AD008AC1A4 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		0088AFCF2A5D923A0024F382 /* ProfilePhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoTableViewCell.swift; sourceTree = "<group>"; };
+		0088AFD02A5D923A0024F382 /* ProfilePhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilePhotoTableViewCell.xib; sourceTree = "<group>"; };
 		009AC4D229F8F91A00AFB70A /* FilmDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsViewController.swift; sourceTree = "<group>"; };
 		009AC4D529F8FC0500AFB70A /* FilmBackgroundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmBackgroundTableViewCell.swift; sourceTree = "<group>"; };
 		009AC4D629F8FC0500AFB70A /* FilmBackgroundTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmBackgroundTableViewCell.xib; sourceTree = "<group>"; };
@@ -115,6 +125,8 @@
 				000BBA8729D5B781000B75A5 /* FirebaseAnalytics in Frameworks */,
 				00435EA129F9456600C0216A /* Kingfisher in Frameworks */,
 				000BBA9329D5B781000B75A5 /* FirebaseFirestoreSwift in Frameworks */,
+				009CDCA62A6122B700718E60 /* Alamofire in Frameworks */,
+				009CDCA92A61237C00718E60 /* AlamofireImage in Frameworks */,
 				000BBA9129D5B781000B75A5 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				000BBA9529D5B781000B75A5 /* FirebaseStorage in Frameworks */,
 				000BBA8F29D5B781000B75A5 /* FirebaseFirestore in Frameworks */,
@@ -154,6 +166,15 @@
 			path = TMDB;
 			sourceTree = "<group>";
 		};
+		00151B792A666A93009C9CB2 /* ButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				00151B7A2A666AAF009C9CB2 /* ButtonTableViewCell.swift */,
+				00151B7B2A666AAF009C9CB2 /* ButtonTableViewCell.xib */,
+			);
+			path = ButtonCell;
+			sourceTree = "<group>";
+		};
 		00435E9729F9436000C0216A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +199,15 @@
 				0059A81929D6F68300AF8F45 /* PasswordTextFieldTableViewCell.xib */,
 			);
 			path = PasswordTextField;
+			sourceTree = "<group>";
+		};
+		0088AFCE2A5D920D0024F382 /* ProfilePhotoCell */ = {
+			isa = PBXGroup;
+			children = (
+				0088AFCF2A5D923A0024F382 /* ProfilePhotoTableViewCell.swift */,
+				0088AFD02A5D923A0024F382 /* ProfilePhotoTableViewCell.xib */,
+			);
+			path = ProfilePhotoCell;
 			sourceTree = "<group>";
 		};
 		008B580529FBA12900B9BC06 /* Cell */ = {
@@ -297,6 +327,8 @@
 		009F52732A0E120C000B2200 /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
+				00151B792A666A93009C9CB2 /* ButtonCell */,
+				0088AFCE2A5D920D0024F382 /* ProfilePhotoCell */,
 				00B35CF72A0E2DB300F29F2B /* KeyValueCell */,
 				009F52742A0E1217000B2200 /* SingleButtonCell */,
 			);
@@ -400,6 +432,8 @@
 				000BBA9229D5B781000B75A5 /* FirebaseFirestoreSwift */,
 				000BBA9429D5B781000B75A5 /* FirebaseStorage */,
 				00435EA029F9456600C0216A /* Kingfisher */,
+				009CDCA52A6122B700718E60 /* Alamofire */,
+				009CDCA82A61237C00718E60 /* AlamofireImage */,
 			);
 			productName = TMDB;
 			productReference = 000BBA6C29D5B152000B75A5 /* TMDB.app */;
@@ -432,6 +466,8 @@
 			packageReferences = (
 				000BBA8529D5B781000B75A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				00435E9F29F9456600C0216A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				009CDCA42A6122B700718E60 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				009CDCA72A61237C00718E60 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = 000BBA6D29D5B152000B75A5 /* Products */;
 			projectDirPath = "";
@@ -449,6 +485,7 @@
 			files = (
 				00B6D49F2A0B716000559F11 /* ProfileViewController.xib in Resources */,
 				000BBA7C29D5B153000B75A5 /* LaunchScreen.storyboard in Resources */,
+				0088AFD22A5D923A0024F382 /* ProfilePhotoTableViewCell.xib in Resources */,
 				009AC4D829F8FC0500AFB70A /* FilmBackgroundTableViewCell.xib in Resources */,
 				00F63D3B29DD582900281787 /* FilmsTableViewCell.xib in Resources */,
 				000BBA8429D5B2CC000B75A5 /* GoogleService-Info.plist in Resources */,
@@ -459,6 +496,7 @@
 				00435E9E29F9445400C0216A /* ButtonsTableViewCell.xib in Resources */,
 				00B35CFB2A0E2DEE00F29F2B /* KeyValueTableViewCell.xib in Resources */,
 				000BBA7929D5B153000B75A5 /* Assets.xcassets in Resources */,
+				00151B7D2A666AAF009C9CB2 /* ButtonTableViewCell.xib in Resources */,
 				009AC4DC29F8FD1300AFB70A /* FilmOverviewTableViewCell.xib in Resources */,
 				000BBA7729D5B152000B75A5 /* Main.storyboard in Resources */,
 				009F52782A0E123D000B2200 /* SingleButtonTableViewCell.xib in Resources */,
@@ -482,12 +520,14 @@
 				00B6D4AE2A0BBFC200559F11 /* AlertViewController.swift in Sources */,
 				00FAC04229D6B1DC0065C67D /* LoginViewController.swift in Sources */,
 				00F63D3D29DD86FE00281787 /* TMDBModel.swift in Sources */,
+				0088AFD12A5D923A0024F382 /* ProfilePhotoTableViewCell.swift in Sources */,
 				007B27802A1CDB9B009C763E /* CommentModel.swift in Sources */,
 				0086B2952A0A70AD008AC1A4 /* CommentTableViewCell.swift in Sources */,
 				00FAC03E29D6B12D0065C67D /* ImageTableViewCell.swift in Sources */,
 				00B6D49A2A0B6F5700559F11 /* TabbarViewController.swift in Sources */,
 				009F52772A0E123D000B2200 /* SingleButtonTableViewCell.swift in Sources */,
 				00B6D49E2A0B716000559F11 /* ProfileViewController.swift in Sources */,
+				00151B7C2A666AAF009C9CB2 /* ButtonTableViewCell.swift in Sources */,
 				00435E9D29F9445400C0216A /* ButtonsTableViewCell.swift in Sources */,
 				00FAC04829D6B6690065C67D /* EmailTextFieldTableViewCell.swift in Sources */,
 				00D5F6CE29F7A88000E0813E /* SearchTableViewCell.swift in Sources */,
@@ -739,6 +779,22 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		009CDCA42A6122B700718E60 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		009CDCA72A61237C00718E60 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -786,6 +842,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 00435E9F29F9456600C0216A /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		009CDCA52A6122B700718E60 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 009CDCA42A6122B700718E60 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		009CDCA82A61237C00718E60 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 009CDCA72A61237C00718E60 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
